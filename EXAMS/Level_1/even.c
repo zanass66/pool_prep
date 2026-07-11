@@ -1,18 +1,4 @@
-/*Assignment name  : even
-Expected files   : even.c
-Allowed functions: write
---------------------------------------------------------------------------------
-
-Write a program That displays  even numbers, followed by a new line.
-
-Example:
-
-$> ./even
-0246810
-$> ./even | cat -e
-0246810$
-==========================================================================================
-*/
+//allowed function : write
 #include <unistd.h>
 void    ft_putchar(char c)
 {
