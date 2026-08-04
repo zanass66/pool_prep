@@ -1,0 +1,3 @@
+char *strcapitalize(char *str) {
+    
+}

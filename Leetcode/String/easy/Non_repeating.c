@@ -17,7 +17,7 @@ void    ft_putnbr(int nb)
         ft_putnbr(nb / 10);
     ft_putchar((nb % 10) + '0');
 }
-int     non_repeating_char(char *str)
+int     find_non_repeating_char(char *str)
 {
     int     i;
     int     j;
@@ -48,6 +48,6 @@ int     non_repeating_char(char *str)
 }
 int main()
 {
-    ft_putnbr(non_repeating_char("aaBccBAA"));
+    ft_putnbr(find_non_repeating_char("aaBccBAA"));
     return 0;
 }
