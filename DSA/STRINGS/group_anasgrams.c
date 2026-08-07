@@ -38,10 +38,26 @@ char *generate_signature(char *str) {
         }
         k++;
     }
+    int *visited = (int *) malloc (sizeof(int) * size);
+    if (visited == NULL)
+        return NULL;
+    int l = 0;
+    while (l < size) {
+        visited[l] = 0;
+        l++;
+    }
+    i = 0;
+    while (i < size) {
+        if (visited[i] == 1)
+            continue;
+        else if (visited[i] == 0)
+            char *sig_i = generate_signature(strs[i]);
+
+    }
     return new_string;
 }
 int main() {
-    char q[] = "hello";
+    char q[] = "zanass";
     char *new_string = generate_signature(q);
     int i = 0;
     while (i < 5) {
